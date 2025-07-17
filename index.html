@@ -37,11 +37,11 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
-        <script src="data/Regiaometropssa_5.js"></script>
+        <script src="data/Regiaometropssa_2.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-13.13303717472119,-39.01883608572052],[-12.230037174721188,-37.68452079160288]]);
+        }).fitBounds([[-13.133037174721188,-38.92322432101464],[-12.230037174721186,-37.78013255630875]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -93,43 +93,16 @@
         });
         layer_GoogleSatellite_0;
         map.addLayer(layer_GoogleSatellite_0);
-        map.createPane('pane_mdia20152019x10_1');
-        map.getPane('pane_mdia20152019x10_1').style.zIndex = 401;
-        var img_mdia20152019x10_1 = 'data/mdia20152019x10_1.png';
-        var img_bounds_mdia20152019x10_1 = [[-13.13,-38.8],[-12.27,-37.9]];
-        var layer_mdia20152019x10_1 = new L.imageOverlay(img_mdia20152019x10_1,
-                                              img_bounds_mdia20152019x10_1,
-                                              {pane: 'pane_mdia20152019x10_1'});
-        bounds_group.addLayer(layer_mdia20152019x10_1);
-        map.addLayer(layer_mdia20152019x10_1);
-        map.createPane('pane_2019x10_2');
-        map.getPane('pane_2019x10_2').style.zIndex = 402;
-        var img_2019x10_2 = 'data/2019x10_2.png';
-        var img_bounds_2019x10_2 = [[-13.13,-38.8],[-12.27,-37.9]];
-        var layer_2019x10_2 = new L.imageOverlay(img_2019x10_2,
-                                              img_bounds_2019x10_2,
-                                              {pane: 'pane_2019x10_2'});
-        bounds_group.addLayer(layer_2019x10_2);
-        map.addLayer(layer_2019x10_2);
-        map.createPane('pane_mdia20152019_3');
-        map.getPane('pane_mdia20152019_3').style.zIndex = 403;
-        var img_mdia20152019_3 = 'data/mdia20152019_3.png';
-        var img_bounds_mdia20152019_3 = [[-13.13,-38.8],[-12.27,-37.9]];
-        var layer_mdia20152019_3 = new L.imageOverlay(img_mdia20152019_3,
-                                              img_bounds_mdia20152019_3,
-                                              {pane: 'pane_mdia20152019_3'});
-        bounds_group.addLayer(layer_mdia20152019_3);
-        map.addLayer(layer_mdia20152019_3);
-        map.createPane('pane_Densidade2020_4');
-        map.getPane('pane_Densidade2020_4').style.zIndex = 404;
-        var img_Densidade2020_4 = 'data/Densidade2020_4.png';
-        var img_bounds_Densidade2020_4 = [[-13.133333333333368,-38.80000000000007],[-12.266666666666708,-37.89166666666674]];
-        var layer_Densidade2020_4 = new L.imageOverlay(img_Densidade2020_4,
-                                              img_bounds_Densidade2020_4,
-                                              {pane: 'pane_Densidade2020_4'});
-        bounds_group.addLayer(layer_Densidade2020_4);
-        map.addLayer(layer_Densidade2020_4);
-        function pop_Regiaometropssa_5(feature, layer) {
+        map.createPane('pane_mdia20152019_1');
+        map.getPane('pane_mdia20152019_1').style.zIndex = 401;
+        var img_mdia20152019_1 = 'data/mdia20152019_1.png';
+        var img_bounds_mdia20152019_1 = [[-13.13,-38.8],[-12.27,-37.9]];
+        var layer_mdia20152019_1 = new L.imageOverlay(img_mdia20152019_1,
+                                              img_bounds_mdia20152019_1,
+                                              {pane: 'pane_mdia20152019_1'});
+        bounds_group.addLayer(layer_mdia20152019_1);
+        map.addLayer(layer_mdia20152019_1);
+        function pop_Regiaometropssa_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['CD_MUN'] !== null ? autolinker.link(String(feature.properties['CD_MUN']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -154,9 +127,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Regiaometropssa_5_0() {
+        function style_Regiaometropssa_2_0() {
             return {
-                pane: 'pane_Regiaometropssa_5',
+                pane: 'pane_Regiaometropssa_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -167,26 +140,23 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Regiaometropssa_5');
-        map.getPane('pane_Regiaometropssa_5').style.zIndex = 405;
-        map.getPane('pane_Regiaometropssa_5').style['mix-blend-mode'] = 'normal';
-        var layer_Regiaometropssa_5 = new L.geoJson(json_Regiaometropssa_5, {
+        map.createPane('pane_Regiaometropssa_2');
+        map.getPane('pane_Regiaometropssa_2').style.zIndex = 402;
+        map.getPane('pane_Regiaometropssa_2').style['mix-blend-mode'] = 'normal';
+        var layer_Regiaometropssa_2 = new L.geoJson(json_Regiaometropssa_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Regiaometropssa_5',
-            layerName: 'layer_Regiaometropssa_5',
-            pane: 'pane_Regiaometropssa_5',
-            onEachFeature: pop_Regiaometropssa_5,
-            style: style_Regiaometropssa_5_0,
+            dataVar: 'json_Regiaometropssa_2',
+            layerName: 'layer_Regiaometropssa_2',
+            pane: 'pane_Regiaometropssa_2',
+            onEachFeature: pop_Regiaometropssa_2,
+            style: style_Regiaometropssa_2_0,
         });
-        bounds_group.addLayer(layer_Regiaometropssa_5);
-        map.addLayer(layer_Regiaometropssa_5);
+        bounds_group.addLayer(layer_Regiaometropssa_2);
+        map.addLayer(layer_Regiaometropssa_2);
         var overlaysTree = [
-            {label: '<img src="legend/Regiaometropssa_5.png" /> Regiao metrop ssa', layer: layer_Regiaometropssa_5},
-            {label: "Densidade2020", layer: layer_Densidade2020_4},
-            {label: "média2015-2019", layer: layer_mdia20152019_3},
-            {label: "2019x10", layer: layer_2019x10_2},
-            {label: "média 2015-2019 x 10", layer: layer_mdia20152019x10_1},
+            {label: '<img src="legend/Regiaometropssa_2.png" /> Regiao metrop ssa', layer: layer_Regiaometropssa_2},
+            {label: "média2015-2019", layer: layer_mdia20152019_1},
             {label: "Google Satellite", layer: layer_GoogleSatellite_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
